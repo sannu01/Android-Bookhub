@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#CAE8E8"
+    tools:context=".fragment.ProfileFragment">
+
+    <TextView
+        android:id="@+id/txtprofile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        android:textStyle="italic"
+        android:textSize="30sp"
+        android:textColor="#00090B"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:padding="6dp"
+
+        />
+
+
+
+    <TextView
+        android:id="@+id/txtname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textSize="17sp"
+        android:textColor="#000000"
+        android:textStyle="normal"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/txtprofile"
+        android:layout_marginLeft="15dp"/>
+
+    <EditText
+        android:id="@+id/enname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sannu Kumar"
+        android:textColor="#6AC31C"
+        android:layout_below="@id/txtname"
+        android:textSize="25sp"
+        android:layout_marginLeft="15dp"
+        android:textStyle="bold"
+        android:maxLines="1"
+        android:padding="5dp"/>
+    <TextView
+        android:id="@+id/txtphone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone Number"
+        android:textSize="17sp"
+        android:textColor="#000000"
+        android:textStyle="normal"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/enname"
+        android:layout_marginLeft="15dp"/>
+
+    <EditText
+        android:id="@+id/enphone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7073204275"
+        android:textColor="#1C43C3"
+        android:layout_below="@id/txtphone"
+        android:textSize="25sp"
+        android:layout_marginLeft="15dp"
+        android:textStyle="bold"
+        android:maxLines="1"
+        android:padding="5dp"/>
+
+    <TextView
+        android:id="@+id/txtemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textSize="17sp"
+        android:textColor="#000000"
+        android:textStyle="normal"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/enphone"
+        android:layout_marginLeft="15dp"/>
+
+    <EditText
+        android:id="@+id/enmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kumarsannu.01@gmail.com"
+        android:textColor="#7B1FA2"
+        android:layout_below="@id/txtemail"
+        android:textSize="25sp"
+        android:layout_marginLeft="15dp"
+        android:maxLines="1"
+        android:textStyle="bold"
+        android:padding="5dp"/>
+    <TextView
+        android:id="@+id/txtaddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:textSize="17sp"
+        android:textColor="#000000"
+        android:textStyle="normal"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/enmail"
+        android:layout_marginLeft="15dp"/>
+
+    <EditText
+        android:id="@+id/enaddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Noida"
+        android:textColor="#C2185B"
+        android:layout_below="@id/txtaddress"
+        android:textSize="25sp"
+        android:layout_marginLeft="15dp"
+        android:textStyle="bold"
+        android:maxLines="1"
+        android:padding="5dp"/>
+    <ImageView
+        android:id="@+id/testimg"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_star"
+        android:background="#ffffff"
+        android:layout_below="@id/enaddress"
+        android:layout_margin="50dp"/>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

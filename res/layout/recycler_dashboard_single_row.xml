@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="140dp"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="3dp"
+    app:cardCornerRadius="5dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/llcontent"
+        android:weightSum="10">
+<RelativeLayout
+    android:layout_width="0dp" android:layout_height="140dp"
+    android:layout_weight="8.2"
+    >
+<androidx.cardview.widget.CardView
+    android:id="@+id/imgcard"
+    android:layout_width="120dp"
+    android:layout_height="120dp"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="10dp">
+    <ImageView
+        android:id="@+id/imgrecyclerRowItem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/book_app_icon_web"
+        android:scaleType="centerCrop"
+        />
+</androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/txtRecyclerRowItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imgcard"
+        android:textSize="18dp"
+        android:layout_marginTop="5dp"
+        android:padding="2dp"
+        android:text="List Item"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txtAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Author Name"
+        android:textStyle="italic"
+        android:textSize="16sp"
+        android:padding="5dp"
+        android:layout_toRightOf="@id/imgcard"
+        android:layout_below="@id/txtRecyclerRowItem"
+        android:layout_marginTop="5dp"/>
+
+
+    <TextView
+        android:id="@+id/txtPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rs. 299"
+        android:textStyle="normal"
+        android:layout_alignParentBottom="true"
+        android:textSize="14dp"
+        android:padding="5dp"
+        android:textColor="#118C7F"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@id/imgcard"/>
+
+
+
+</RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.8">
+            <ImageView
+                android:id="@+id/imgfav"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_unfav"
+                android:padding="5dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/textrating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4.5"
+            android:padding="2dp"
+            android:layout_marginBottom="20dp"
+            android:textAlignment="center"
+            android:drawableLeft="@drawable/ic_star"
+            android:drawablePadding="3dp"
+            android:layout_alignParentBottom="true"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            />
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

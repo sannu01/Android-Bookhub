@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/dashboard">
+
+    <fragment
+        android:id="@+id/dashboard"
+        android:name="com.internshala.bookhub.fragment.DashboardFragment"
+        android:label="Dashboard"
+        tools:layout="@layout/fragment_dashboard">
+
+        <action
+            android:id="@+id/action_HomeFragment_to_HomeSecondFragment"
+            app:destination="@id/nav_home_second" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/nav_home_second"
+        android:name="com.internshala.bookhub.fragment.HomeSecondFragment"
+        android:label="SecondDashboard"
+        tools:layout="@layout/fragment_home_second">
+    <action
+        android:id="@+id/action_HomeSecondFragment_to_HomeFragment"
+        app:destination="@id/dashboard" />
+
+    <argument
+        android:name="myArg"
+        app:argType="string" />
+    </fragment>
+
+
+
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.internshala.bookhub.fragment.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/favourite"
+        android:name="com.internshala.bookhub.fragment.FavouriteFragment"
+        android:label="Favourite"
+        tools:layout="@layout/fragment_favourite" />
+</navigation>
